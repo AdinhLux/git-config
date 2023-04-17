@@ -1,0 +1,21 @@
+[user]
+	name = ADI
+	email = adinh@jiway.lu
+
+# Avoiding fast-forward merging (all commits in 1 line)
+[merge]
+	ff = false
+[pull]
+	ff = only
+[alias]
+	graph = log --decorate --oneline --graph --all
+	merge-no-edit = !env GIT_EDITOR=: git merge
+
+# To load extra files (like color options for git)	
+[include]
+	path = ~/.config/git/colors.config
+
+[http]
+	sslVerify = true
+[core]
+	editor = nano
